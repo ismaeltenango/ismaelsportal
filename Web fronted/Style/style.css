@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap'); /*headings*/
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Concert+One&display=swap'); /*Text*/
 
+
+.grid{
+  display: grid;
+  justify-content: center;
+}
+
 .name{
   color: darkblue;
   background-color: lightblue;
@@ -14,12 +20,6 @@ h2{
   border-bottom: 1px solid rgb(179, 49, 49);
 }
 
-#content{
-  max-width: 100px;
-  margin: 3em;
-}
-
-
 footer{
   color:darkblue;
   background-color: lightblue;
@@ -30,8 +30,6 @@ footer{
 }
 
 main {
-  margin:400px;
-  margin-top: 100px;
   transition: all 1.3s;
   font-family: "Baloo 2", sans-serif, Arial;
 }
@@ -54,24 +52,12 @@ a:active {
   margin-top: -30px;
   margin-right: 10px;
   z-index: -5;
+  width: 100px;
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 550px) {
-  main {
-    display: block;
-  }
-
-  #content{
+  .grid{
     display: block;
   }
 
